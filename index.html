@@ -4,11 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Baila Sin Control | Alberto Dorian</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -20,6 +23,8 @@ href="style.css">
 
 <body>
 
+<div id="particles"></div>
+
 <div class="card">
 
 <img
@@ -27,65 +32,87 @@ class="cover"
 src="./IMG_0815.png"
 alt="Baila Sin Control">
 
-<h1>Baila Sin Control</h1>
+<h1 class="gold-title">
+Baila Sin Control
+</h1>
 
 <p class="artist">
-
 Alberto Dorian
-
 </p>
 
 <a class="button spotify"
 href="https://open.spotify.com/artist/05JuuguaTxtV2HAIijE2MU?si=copvURMVS7uYpx7i_yv_kA&utm_source=copy-link"
 target="_blank">
+
 <i class="fab fa-spotify"></i>
+
 Spotify
+
 </a>
 
 <a class="button apple"
 href="https://music.apple.com/mx/artist/alberto-dorian/6787090805"
 target="_blank">
+
 <i class="fab fa-apple"></i>
+
 Apple Music
+
 </a>
 
 <a class="button youtube"
 href="https://youtube.com/channel/UCjXlB41vOG5PU0M3wrKzEWw?si=8U6mJnnVnQ4GEb7C"
 target="_blank">
+
 <i class="fab fa-youtube"></i>
+
 YouTube Music
+
 </a>
 
 <a class="button amazon"
 href="https://music.amazon.com.mx/artists/B0H7NWRDQH?ref=dm_sh_iRR9prsm5MN0V2XJry0nsYsx3"
 target="_blank">
+
 <i class="fab fa-amazon"></i>
+
 Amazon Music
+
 </a>
 
 <a class="button audiomack"
 href="https://audiomack.com/alberto-dorian/song/ritmo-tumbabeat"
 target="_blank">
+
 🎵 Audiomack
+
 </a>
 
 <a class="button x"
 href="https://x.com/albertodorianof?s=11&t=qNZESQlFdTjzGgHTFKx54A"
 target="_blank">
+
 <i class="fa-brands fa-x-twitter"></i>
+
 X
+
 </a>
 
 <a class="button instagram"
 href="https://www.instagram.com/albertodorianmusic"
 target="_blank">
+
 <i class="fab fa-instagram"></i>
+
 Instagram
+
 </a>
 
 <h2 class="section">
 🎬 Video Oficial
 </h2>
+
+<div class="video-box">
 
 <iframe
 class="video"
@@ -95,26 +122,36 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
 allowfullscreen>
 </iframe>
 
-<button class="share" onclick="compartir()">
-📤 Compartir
+</div>
+
+<button
+class="share pulse"
+onclick="compartir()">
+
+<i class="fa-solid fa-share-nodes"></i>
+
+Compartir
+
 </button>
 
 <h2 class="section">
 👤 Biografía
 </h2>
 
-<div class="bio">
+<div class="bio reveal">
 
-<h3>Alberto Dorian</h3>
+<h3 class="gold-subtitle">
+Alberto Dorian
+</h3>
 
 <p>
 
 Alberto Dorian es un artista mexicano y creador del movimiento
-<strong>TumbadoBeat</strong>, una propuesta musical que fusiona la esencia del regional mexicano
-con sonidos urbanos y electrónicos para crear una identidad propia.
+<strong>TumbadoBeat</strong>, una propuesta que fusiona el regional mexicano,
+el pop, los sonidos urbanos y la música electrónica para crear una identidad única.
 
-Su música busca transmitir emociones reales, energía positiva y una visión innovadora,
-conectando con nuevas generaciones a través de un estilo único.
+Cada lanzamiento representa una evolución artística, con canciones que transmiten
+energía, pasión, superación y autenticidad.
 
 </p>
 
@@ -126,25 +163,33 @@ conectando con nuevas generaciones a través de un estilo único.
 
 <div class="release">
 
-<div class="song">
-🎵 <strong>Y Si Decides Regresar</strong><br>
+<div class="song reveal">
+🎵
+<strong>Y Si Decides Regresar</strong>
+<br>
 Próximamente
 </div>
 
-<div class="song">
-🎵 <strong>No Me Voy a Detener</strong><br>
+<div class="song reveal">
+🎵
+<strong>No Me Voy a Detener</strong>
+<br>
 Próximamente
 </div>
 
-<div class="song">
-🎵 <strong>Historia Falsa de Amor</strong><br>
+<div class="song reveal">
+🎵
+<strong>Historia Falsa de Amor</strong>
+<br>
 Próximamente
 </div>
 
 </div>
 
 <div class="footer">
+
 © 2026 Alberto Dorian • TumbadoBeat™
+
 </div>
 
 </div>
@@ -153,6 +198,7 @@ Próximamente
 
 </body>
 </html>
+
 
 
 
