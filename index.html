@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Baila Sin Control | Alberto Dorian</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 <style>
+
 body{
 margin:0;
-background:#000;
-font-family:Arial,sans-serif;
+background:linear-gradient(#1b0000,#000,#120000);
+font-family:Arial,Helvetica,sans-serif;
 color:#fff;
-display:flex;
-justify-content:center;
-padding:20px;
 }
 
 .card{
-width:100%;
-max-width:430px;
+max-width:460px;
+margin:30px auto;
+padding:20px;
 text-align:center;
 }
 
 .cover{
 width:100%;
-border-radius:20px;
-display:block;
+border-radius:18px;
+box-shadow:0 0 25px rgba(255,0,0,.35);
 }
 
 h1{
-font-size:54px;
-margin:20px 0 5px;
+font-size:52px;
+margin:20px 0 10px;
 }
 
 p{
-color:#888;
-font-size:24px;
+color:#bdbdbd;
+font-size:22px;
 margin-bottom:30px;
 }
 
-a{
+a.button{
 display:block;
-background:#1f1f1f;
-color:#fff;
+background:#202020;
+color:white;
 text-decoration:none;
 padding:18px;
 margin:14px 0;
-border-radius:14px;
-font-size:22px;
+border-radius:16px;
 font-weight:bold;
+font-size:20px;
+transition:.3s;
 }
 
-a:hover{
-background:#333;
+a.button:hover{
+background:#c00000;
+transform:translateY(-3px);
+}
+
+i{
+margin-right:10px;
 }
 
 .video{
-margin-top:35px;
-border-radius:18px;
-overflow:hidden;
-aspect-ratio:16/9;
+margin-top:40px;
 }
 
-.video iframe{
+iframe{
 width:100%;
-height:100%;
-border:0;
+height:260px;
+border:none;
+border-radius:16px;
 }
+
 </style>
 
 </head>
@@ -77,27 +85,50 @@ border:0;
 <div class="card">
 
 <img class="cover"
-src="https://www.image2url.com/r2/default/images/1785564029012-1d174236-78fc-4918-9325-395ebb31d281.png">
+src="PON_AQUI_TU_PORTADA.jpg">
 
 <h1>Baila Sin Control</h1>
 
 <p>Alberto Dorian</p>
 
-<a href="#">Spotify</a>
-<a href="#">Apple Music</a>
-<a href="#">YouTube Music</a>
-<a href="#">Amazon Music</a>
-<a href="#">Deezer</a>
-<a href="#">TIDAL</a>
-<a href="#">TikTok</a>
+<a class="button" href="https://open.spotify.com/artist/05JuuguaTxtV2HAIijE2MU?si=copvURMVS7uYpx7i_yv_kA&utm_source=copy-link" target="_blank">
+<i class="fab fa-spotify"></i>Spotify
+</a>
+
+<a class="button" href="https://music.apple.com/mx/artist/alberto-dorian/6787090805" target="_blank">
+<i class="fab fa-apple"></i>Apple Music
+</a>
+
+<a class="button" href="https://youtube.com/channel/UCjXlB41vOG5PU0M3wrKzEWw?si=8U6mJnnVnQ4GEb7C" target="_blank">
+<i class="fab fa-youtube"></i>YouTube Music
+</a>
+
+<a class="button" href="https://music.amazon.com.mx/artists/B0H7NWRDQH?ref=dm_sh_iRR9prsm5MN0V2XJry0nsYsx3" target="_blank">
+<i class="fab fa-amazon"></i>Amazon Music
+</a>
+
+<a class="button" href="https://audiomack.com/alberto-dorian/song/ritmo-tumbabeat" target="_blank">
+🎵 Audiomack
+</a>
+
+<a class="button" href="https://x.com/albertodorianof?s=11&t=qNZESQlFdTjzGgHTFKx54A" target="_blank">
+<i class="fa-brands fa-x-twitter"></i>X
+</a>
+
+<a class="button" href="https://www.instagram.com/albertodorianmusic?igsh=MThjMG5kZWo2dzBjbg%3D%3D&utm_source=qr" target="_blank">
+<i class="fab fa-instagram"></i>Instagram
+</a>
+
+<div class="video">
 
 <h2>🎬 Video Oficial</h2>
 
-<div class="video">
 <iframe
 src="https://www.youtube.com/embed/eIcZxNtSaDs"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
+
 </div>
 
 </div>
