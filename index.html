@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Baila Sin Control | Alberto Dorian</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
 <body>
 
 <div class="card">
@@ -10,483 +30,129 @@ alt="Baila Sin Control">
 <h1>Baila Sin Control</h1>
 
 <p class="artist">
+
 Alberto Dorian
+
 </p>
 
 <a class="button spotify"
 href="https://open.spotify.com/artist/05JuuguaTxtV2HAIijE2MU?si=copvURMVS7uYpx7i_yv_kA&utm_source=copy-link"
 target="_blank">
-
 <i class="fab fa-spotify"></i>
-
 Spotify
-
 </a>
 
 <a class="button apple"
 href="https://music.apple.com/mx/artist/alberto-dorian/6787090805"
 target="_blank">
-
 <i class="fab fa-apple"></i>
-
 Apple Music
-
 </a>
 
 <a class="button youtube"
 href="https://youtube.com/channel/UCjXlB41vOG5PU0M3wrKzEWw?si=8U6mJnnVnQ4GEb7C"
 target="_blank">
-
 <i class="fab fa-youtube"></i>
-
 YouTube Music
-
 </a>
 
 <a class="button amazon"
 href="https://music.amazon.com.mx/artists/B0H7NWRDQH?ref=dm_sh_iRR9prsm5MN0V2XJry0nsYsx3"
 target="_blank">
-
 <i class="fab fa-amazon"></i>
-
 Amazon Music
-
 </a>
 
 <a class="button audiomack"
 href="https://audiomack.com/alberto-dorian/song/ritmo-tumbabeat"
 target="_blank">
-
 🎵 Audiomack
-
 </a>
 
 <a class="button x"
 href="https://x.com/albertodorianof?s=11&t=qNZESQlFdTjzGgHTFKx54A"
 target="_blank">
-
 <i class="fa-brands fa-x-twitter"></i>
-
 X
-
 </a>
 
 <a class="button instagram"
 href="https://www.instagram.com/albertodorianmusic"
 target="_blank">
-
 <i class="fab fa-instagram"></i>
-
 Instagram
-
 </a>
 
-<div class="section">
-
+<h2 class="section">
 🎬 Video Oficial
-
-</div>
+</h2>
 
 <iframe
 class="video"
 src="https://www.youtube.com/embed/eIcZxNtSaDs"
+title="Video Oficial"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
 
-<button
-class="share"
-onclick="compartir()">
-
+<button class="share" onclick="compartir()">
 📤 Compartir
-
 </button>
 
-</div>
-
-<script>
-
-function compartir(){
-
-if(navigator.share){
-
-navigator.share({
-
-title:"Baila Sin Control",
-
-text:"Escucha el nuevo sencillo de Alberto Dorian",
-
-url:window.location.href
-
-});
-
-}else{
-
-navigator.clipboard.writeText(window.location.href);
-
-alert("Link copiado");
-
-}
-
-}
-
-</script>
-
-</body>
-
-/* ===== ANIMACIONES ===== */
-
-.button{
-position:relative;
-overflow:hidden;
-transition:.35s;
-}
-
-.button:hover{
-
-transform:translateY(-4px) scale(1.03);
-
-box-shadow:
-0 0 25px rgba(255,0,0,.55);
-
-}
-
-.button:active{
-
-transform:scale(.96);
-
-}
-
-.button::before{
-
-content:"";
-
-position:absolute;
-
-top:0;
-
-left:-120%;
-
-width:70%;
-
-height:100%;
-
-background:linear-gradient(
-90deg,
-transparent,
-rgba(255,255,255,.45),
-transparent);
-
-transform:skewX(-25deg);
-
-transition:.7s;
-
-}
-
-.button:hover::before{
-
-left:140%;
-
-}
-
-/* Colores */
-
-.apple{
-
-background:#242424;
-
-}
-
-.youtube{
-
-background:#c60000;
-
-}
-
-.amazon{
-
-background:#2f2f2f;
-
-}
-
-.audiomack{
-
-background:#ff8a00;
-
-}
-
-.x{
-
-background:#111;
-
-}
-
-.instagram{
-
-background:linear-gradient(
-45deg,
-#833ab4,
-#fd1d1d,
-#fcb045);
-
-}
-
-/* Animación de portada */
-
-.cover{
-
-animation:portada 4s ease-in-out infinite;
-
-}
-
-@keyframes portada{
-
-0%{
-
-transform:scale(1);
-
-}
-
-50%{
-
-transform:scale(1.02);
-
-box-shadow:
-0 0 45px rgba(255,0,0,.65);
-
-}
-
-100%{
-
-transform:scale(1);
-
-}
-
-}
-
-h1{
-
-animation:titulo 2s ease;
-
-}
-
-@keyframes titulo{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:none;
-
-}
-
-}
-
-<div class="section">
-
+<h2 class="section">
 👤 Biografía
-
-</div>
+</h2>
 
 <div class="bio">
 
-<h2>Alberto Dorian</h2>
+<h3>Alberto Dorian</h3>
 
 <p>
 
-Alberto Dorian es un artista mexicano creador del movimiento
-<strong>TumbadoBeat</strong>, una propuesta que fusiona la esencia del regional mexicano
-con sonidos urbanos, pop y música electrónica.
+Alberto Dorian es un artista mexicano y creador del movimiento
+<strong>TumbadoBeat</strong>, una propuesta musical que fusiona la esencia del regional mexicano
+con sonidos urbanos y electrónicos para crear una identidad propia.
 
-Su objetivo es crear canciones con identidad propia, emociones auténticas
-y una producción moderna que conecte con nuevas generaciones.
-
-Cada lanzamiento representa una nueva etapa dentro del universo
-TumbadoBeat.
+Su música busca transmitir emociones reales, energía positiva y una visión innovadora,
+conectando con nuevas generaciones a través de un estilo único.
 
 </p>
 
 </div>
 
-<div class="section">
-
+<h2 class="section">
 🚀 Próximos Lanzamientos
-
-</div>
+</h2>
 
 <div class="release">
 
 <div class="song">
-
-🎵
-
-<strong>
-
-Y Si Decides Regresar
-
-</strong>
-
-<br>
-
+🎵 <strong>Y Si Decides Regresar</strong><br>
 Próximamente
-
 </div>
 
 <div class="song">
-
-🎵
-
-<strong>
-
-No Me Voy a Detener
-
-</strong>
-
-<br>
-
+🎵 <strong>No Me Voy a Detener</strong><br>
 Próximamente
-
 </div>
 
 <div class="song">
-
-🎵
-
-<strong>
-
-Historia Falsa de Amor
-
-</strong>
-
-<br>
-
+🎵 <strong>Historia Falsa de Amor</strong><br>
 Próximamente
+</div>
+
+</div>
+
+<div class="footer">
+
+© 2026 Alberto Dorian • TumbadoBeat™
 
 </div>
 
 </div>
 
-/******** BIO ********/
+<script src="script.js"></script>
 
-.bio{
+</body>
+</html>
 
-margin-top:25px;
-
-padding:25px;
-
-border-radius:22px;
-
-background:#181818;
-
-box-shadow:
-0 0 20px rgba(255,0,0,.18);
-
-line-height:1.8;
-
-color:#d6d6d6;
-
-}
-
-.bio h2{
-
-margin-bottom:18px;
-
-font-size:34px;
-
-}
-
-/******** LANZAMIENTOS ********/
-
-.release{
-
-margin-top:25px;
-
-}
-
-.song{
-
-background:#222;
-
-padding:20px;
-
-border-radius:18px;
-
-margin-bottom:18px;
-
-font-size:22px;
-
-transition:.35s;
-
-}
-
-.song:hover{
-
-transform:translateY(-4px);
-
-box-shadow:
-0 0 18px rgba(255,0,0,.4);
-
-}
-
-/* ===== EFECTO DE ENTRADA ===== */
-
-.card{
-animation:fadeUp 1s ease;
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* ===== BOTÓN SPOTIFY ===== */
-
-.spotify{
-animation:spotifyPulse 2.5s infinite;
-}
-
-@keyframes spotifyPulse{
-0%,100%{
-box-shadow:0 0 0 rgba(255,0,0,0);
-}
-50%{
-box-shadow:
-0 0 20px rgba(255,0,0,.9),
-0 0 45px rgba(255,0,0,.45);
-}
-}
-
-/* ===== BOTÓN COMPARTIR ===== */
-
-.share{
-transition:.35s;
-}
-
-.share:hover{
-transform:scale(1.05);
-box-shadow:
-0 0 20px rgba(255,0,0,.6);
-}
-
-/* ===== PIE DE PÁGINA ===== */
-
-.footer{
-margin-top:40px;
-padding:25px;
-color:#9a9a9a;
-font-size:14px;
-text-align:center;
-}
