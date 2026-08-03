@@ -733,3 +733,13 @@ animation:none;
 opacity:1;
 position:relative;
 }
+
+.button.iheart{
+    background:linear-gradient(135deg,#d71920,#ff4b55);
+    color:#fff;
+}
+
+.button.iheart:hover{
+    transform:translateY(-5px) scale(1.02);
+    box-shadow:0 0 30px rgba(215,25,32,.45);
+}
