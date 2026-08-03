@@ -168,3 +168,29 @@ setInterval(() => {
     });
 
 }, 3000);
+
+/*==============================
+CARRUSEL DE PORTADAS
+==============================*/
+
+const covers = document.querySelectorAll(".cover");
+
+let coverIndex = 0;
+
+if (covers.length > 1) {
+
+    setInterval(() => {
+
+        covers[coverIndex].classList.remove("active");
+
+        coverIndex++;
+
+        if (coverIndex >= covers.length) {
+            coverIndex = 0;
+        }
+
+        covers[coverIndex].classList.add("active");
+
+    }, 4000);
+
+}
