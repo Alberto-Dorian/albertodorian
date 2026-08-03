@@ -695,3 +695,12 @@ box-shadow:
 .button.tidal:hover{
     transform:scale(1.03);
 }
+
+.button.threads{
+    background:linear-gradient(135deg,#000,#333);
+    color:#fff;
+}
+
+.button.threads:hover{
+    transform:scale(1.03);
+}
