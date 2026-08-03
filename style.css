@@ -686,3 +686,12 @@ box-shadow:
 0 0 24px #FE2C55;
 
 }
+
+.button.tidal{
+    background:linear-gradient(135deg,#111,#333);
+    color:#fff;
+}
+
+.button.tidal:hover{
+    transform:scale(1.03);
+}
