@@ -743,3 +743,24 @@ position:relative;
     transform:translateY(-5px) scale(1.02);
     box-shadow:0 0 30px rgba(215,25,32,.45);
 }
+
+
+.boton-contacto {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #d6a719, #ffd45a);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.boton-contacto:hover {
+  transform: translateY(-2px);
+}
