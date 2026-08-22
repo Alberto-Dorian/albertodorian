@@ -764,3 +764,20 @@ position:relative;
 .boton-contacto:hover {
   transform: translateY(-2px);
 }
+
+.release-banner {
+    width: 100%;
+    height: 220px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #111;
+}
+
+.release-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
